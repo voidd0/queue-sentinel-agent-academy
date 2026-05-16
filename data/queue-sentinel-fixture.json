@@ -1,0 +1,240 @@
+{
+  "product": "queue_sentinel",
+  "lane": "agent_academy_special_ops",
+  "mode": "fixture",
+  "generated_from_live_sources_at": "2026-05-13T13:30:00+03:00",
+  "microsoft_claim_state": {
+    "copilot_studio": "blocked_until_authenticated_capture",
+    "m365_copilot": "not_attempted",
+    "copilot_cowork": "not_attempted"
+  },
+  "evidence_sources": [
+    {
+      "path": "/root/.codex/memories/voiddo-live-ops-status.md",
+      "why_it_matters": "current revenue pressure, queue shape, timers, and mail backlog"
+    },
+    {
+      "path": "/root/voiddo-ops/state/voiddo-codex-jobs.json",
+      "why_it_matters": "current job queue, active retries, and priority pressure"
+    },
+    {
+      "path": "/root/.codex/memories/voiddo-autonomy-revenue-doctrine.md",
+      "why_it_matters": "revenue-aware prioritization rules and weak-spot checks"
+    },
+    {
+      "path": "/root/voiddo-ops/reports/codex-daemon/20260513-132208-fast-money-scout-and-action-loop.md",
+      "why_it_matters": "lane activation evidence and current hackathon reality"
+    },
+    {
+      "path": "/root/.claude/projects/-root-scrb/memory/ROADMAP.md",
+      "why_it_matters": "stale owner-blocked items for escalation detection"
+    }
+  ],
+  "ops_snapshot": {
+    "urweb": {
+      "sent_today": 16,
+      "clicked_total": 16,
+      "paid_total": 0,
+      "raw": 4662,
+      "gate_failed": 1003,
+      "deliverability_blocked": 198,
+      "sent": 93,
+      "bounced": 28,
+      "suppressed": 24,
+      "judge_passed": 11,
+      "built": 1
+    },
+    "tells": {
+      "practitioner": {
+        "total": 2870,
+        "submitted": 738,
+        "remote_sent": 327,
+        "deferred": 11,
+        "dropped": 229,
+        "bounced": 21,
+        "landing": 21,
+        "engaged": 4,
+        "qualified": 0,
+        "paid": 0,
+        "revenue": 0.0
+      },
+      "wide": {
+        "total": 15432,
+        "submitted": 2024,
+        "remote_sent": 490,
+        "deferred": 731,
+        "dropped": 760,
+        "bounced": 44,
+        "landing": 19,
+        "engaged": 16,
+        "qualified": 0,
+        "paid": 0,
+        "revenue": 0.0
+      }
+    },
+    "mailcow_queue": {
+      "requests": 493,
+      "size_kbytes": 5108
+    },
+    "money_timers": [
+      "urweb-delivery.timer",
+      "urweb-sender.timer",
+      "urweb-health.timer",
+      "urweb-approval.timer",
+      "urweb-customer-support.timer",
+      "urweb-closer.timer"
+    ],
+    "top_queue_jobs": [
+      {
+        "id": "browser-extension-autonomy-contour",
+        "status": "active",
+        "priority": 88
+      },
+      {
+        "id": "continuous-revenue-research-and-scout-loop",
+        "status": "queued",
+        "priority": 82
+      },
+      {
+        "id": "continuous-product-build-loop",
+        "status": "retry",
+        "priority": 81
+      },
+      {
+        "id": "continuous-distribution-and-presence-loop",
+        "status": "retry",
+        "priority": 80
+      },
+      {
+        "id": "new-money-opportunity-scout-and-ship",
+        "status": "retry",
+        "priority": 70
+      }
+    ],
+    "stale_owner_blockers": [
+      {
+        "item": "rankd Chrome public listing URL",
+        "asked_since": "2026-04-27"
+      },
+      {
+        "item": "jobmeta Chrome public listing URL",
+        "asked_since": "2026-04-27"
+      },
+      {
+        "item": "6 OST Spotify album links",
+        "asked_since": "2026-04-28"
+      },
+      {
+        "item": "Rewardful affiliate credentials",
+        "asked_since": "2026-04-27"
+      }
+    ]
+  },
+  "output_contract": [
+    "run_now",
+    "repair_now",
+    "defer",
+    "owner_only",
+    "revenue_risks",
+    "handoff_packet"
+  ],
+  "triage_result": {
+    "run_now": [
+      {
+        "title": "Push urweb back toward viable send volume",
+        "why": "The doctrine requires 125-150 quality outbound emails per day once active, but the live ops snapshot only shows 16 sent today and 11 judge-passed leads ready.",
+        "evidence": [
+          "voiddo-live-ops-status.md -> urweb sent_today=16",
+          "voiddo-live-ops-status.md -> urweb judge_passed=11",
+          "voiddo-autonomy-revenue-doctrine.md -> urweb volume under 125/day is a P0 defect"
+        ]
+      },
+      {
+        "title": "Protect the shared mail lane before adding more bulk traffic",
+        "why": "Mailcow is carrying 493 queued requests while tells has zero paid conversions and a large deferred/dropped load.",
+        "evidence": [
+          "voiddo-live-ops-status.md -> Mailcow Queue 493 requests",
+          "voiddo-live-ops-status.md -> tells wide deferred=731 dropped=760 paid=0",
+          "voiddo-autonomy-revenue-doctrine.md -> high backpressure must be diagnosed before pushing more volume"
+        ]
+      },
+      {
+        "title": "Keep the Agent Academy lane in local fixture mode only",
+        "why": "The lane is worth building, but Microsoft-backed proof is still missing and must stay blocked until an authenticated run exists.",
+        "evidence": [
+          "20260513-132208-fast-money-scout-and-action-loop.md -> Queue Sentinel selected, Copilot Studio proof path first",
+          "PROJECT-SPEC.md -> no fake Microsoft integration",
+          "SCOUT-CARD.md -> local-first prep allowed, Microsoft-backed claim blocked"
+        ]
+      }
+    ],
+    "repair_now": [
+      {
+        "title": "Increase judged urweb stock instead of blaming send windows",
+        "why": "There are 4662 raw leads, but the sendable pool is too thin and deliverability_blocked remains high.",
+        "evidence": [
+          "voiddo-live-ops-status.md -> raw=4662",
+          "voiddo-live-ops-status.md -> deliverability_blocked=198",
+          "voiddo-autonomy-revenue-doctrine.md -> upstream stockpile/repair is the expected response"
+        ]
+      },
+      {
+        "title": "Re-check tells channel allocation and backpressure",
+        "why": "Wide/practitioner campaigns show submissions and sends, but still zero qualified or paid outcomes. Shared mail infrastructure should not be consumed blindly.",
+        "evidence": [
+          "voiddo-live-ops-status.md -> practitioner qualified=0 paid=0",
+          "voiddo-live-ops-status.md -> wide qualified=0 paid=0",
+          "voiddo-autonomy-revenue-doctrine.md -> bulk tells outreach should pause if it harms a higher-probability money lane"
+        ]
+      }
+    ],
+    "defer": [
+      {
+        "title": "Any Copilot Studio success claim",
+        "why": "No authenticated Microsoft run has been captured yet."
+      },
+      {
+        "title": "Hackathon submission language",
+        "why": "The lane only has fixture proof right now, not sponsor-tech proof or a submission package."
+      }
+    ],
+    "owner_only": [
+      {
+        "title": "Escalate stale owner-blocked items that have sat since late April",
+        "why": "The roadmap explicitly says day-6+ items must be surfaced directly.",
+        "evidence": [
+          "ROADMAP.md POKE LIST -> rankd/jobmeta URLs still missing since 2026-04-27",
+          "ROADMAP.md POKE LIST -> Rewardful credentials still missing since 2026-04-27"
+        ]
+      },
+      {
+        "title": "Only escalate if Microsoft signup hits payment, identity, or 2FA walls",
+        "why": "Free setup with support@voiddo.com is autonomous, but payment, personal identity confirmation, and authenticator codes remain owner-only."
+      }
+    ],
+    "revenue_risks": [
+      {
+        "risk": "urweb volume remains far below the doctrine target",
+        "severity": "critical"
+      },
+      {
+        "risk": "shared Mailcow queue is congested while tells has zero paid signal",
+        "severity": "high"
+      },
+      {
+        "risk": "hackathon lane could drift into fake sponsor-tech claims if proof boundaries are not enforced",
+        "severity": "high"
+      }
+    ],
+    "handoff_packet": {
+      "operator_summary": "Money-first action stays with urweb throughput and mail-lane protection. Queue Sentinel is valid as a Special Ops demo only in fixture mode for now.",
+      "next_best_operator": "ops builder or Copilot Studio integrator",
+      "do_not_claim": [
+        "working Microsoft-backed agent",
+        "Copilot Studio integration complete",
+        "hackathon submission ready"
+      ],
+      "next_proof_trigger": "Create or access a real Copilot Studio environment with support@voiddo.com, recreate this fixture scenario, capture one authenticated test run with the same structured output contract, and store the screenshot plus transcript under /root/devpost-lab/agent-academy-2026/ before any submission claim."
+    }
+  }
+}
